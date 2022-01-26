@@ -13,10 +13,10 @@ Open up the console. Type each line of the following code into the interactive e
  >>> user_favorite_animal = input("What is your favorite animal? ")
  >>> my_favorite_animal == user_favorite_animal
 In your notebook, answer the following
-What does 5 < 3 evaluate to?  
-What is the type of 5 < 3? What does that stand for (should be familiar from Snap!)?
-What is the difference between == and = ?
-What data type do you think my_favorite_animal == user_favorite_animal is?
+What does 5 < 3 evaluate to?  false
+What is the type of 5 < 3? What does that stand for (should be familiar from Snap!)? bool  booleon
+What is the difference between == and = ?  = (set it to) ==(is true or false)
+What data type do you think my_favorite_animal == user_favorite_animal is? str
 ----------------------------
 Part 2
 ----------------------------
@@ -26,7 +26,7 @@ Open up the console. Type the following code into the interactive editor.
  >>> can_get_license = months_with_driving_permit >= 6 and age >= 16
  >>> print(can_get_license)
 In your Notebook, add this to your notes in your notebook
-What does 'and' do here? What type do you think can_get_license is?
+What does 'and' do here? What type do you think can_get_license is? it means both have to be true to make the statement true, bool
 Update the code to fit the new driving law: If you are over the age of 18 you don't need to have a permit
 ----------------------------
 Part 3
@@ -37,5 +37,5 @@ Open up the console. Type the following code into the interactive editor.
 >>> animal = 'mouse'
 >>> animal == 'cat' or animal == 'dog'
 In your notebook, continue answers to the following
-What does = and == do here?
-What is the difference between the two 'or' statements?
+What does = and == do here? it says true or false
+What is the difference between the two 'or' statements? one chooses between cat or dog and the other decides if mouse is a cat or dog
