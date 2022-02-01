@@ -77,9 +77,30 @@ User picks a number
 The prize corresponding with that door is printed for the user.
 Write code below the multiline comment
 '''
-##triangle
-xin = input("what is x? ")
-yin = input("what is y? ")
-zin = input("what is z? ")
 
-if ((xin + yin)> zin) and ((xin + zin) > yin) and ((yin + zin))
+##triangle
+xin = int(input("what is x? "))
+yin = int(input("what is y? "))
+zin = int(input("what is z? "))
+
+# is it triangle
+if xin + yin > zin and xin + zin > yin and yin + zin > xin: 
+    print(f"perimeter of the triangle is {xin+yin+zin}")
+
+    #is it right triangle
+    if xin ** 2 + yin ** 2 == zin ** 2:
+        print('this is a right triangle')
+
+    #determine if isoscelese, scalene, or equilateral
+    if xin == yin and yin == zin: 
+        print("this is an equilateral triangle")
+    elif xin == yin or zin == yin or xin == zin:
+        print("this is an isosceles triangle")
+    else:
+        print("this is a scalene trinagle")
+
+
+
+
+else:
+    print("sorry, these inputs dont make a triangle.")
