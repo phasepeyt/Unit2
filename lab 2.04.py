@@ -10,30 +10,30 @@ Example 1
     print(a[0])
     print(a[3])
 
-    prediction:                                            
-    actual:
+    prediction:  nothing, abcdeabcdeabcde                                          
+    actual: a, d
 
 Example 2
     a = ['a', 'b', 'c', 'd', 'e']
     print(a[len(a) - 3])
 
-    prediction:
-    actual:
+    prediction: c
+    actual:c
 
 Example 3
     a = ['a', 'b', 'c', 'd', 'e']
     print(a[len(a) - 6])
 
-    prediction:
-    actual:
+    prediction:a
+    actual:e
 
 Example 4
     a = ['a', 'b', 'c', 'd', 'e']
     a[3] = 'haha'
     print(a)
 
-    prediction:
-    actual:
+    prediction: ['a','b','c','haha','e']
+    actual: same
 
 2. Create this game again using lists and indexes
 --------------------------------------------------
@@ -80,5 +80,5 @@ a = ['a', 'b', 'c', ['d', 'e']]
 b = a[3]
 print(b)
 Bonus - In your Notebook
-How would you access d from the list a?
-'''
+How would you access d from the list a? print(a[4])
+''' 
