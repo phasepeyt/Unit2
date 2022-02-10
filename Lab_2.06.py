@@ -61,7 +61,11 @@ print(" - - - - ")
 print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
 
 numturn = 0
+player = 1 #turn
+player_symbol = ""
 
+#main game loop
+player_symbol = 'x'
 while True:
     #playerturn
     turn = int(input("pick a number to place ur x: "))
@@ -94,25 +98,25 @@ while True:
     print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
 
     #player2turn
-    turn = int(input("pick a number to place ur x: "))
-    if turn == 1:
-        board[0][0] = 'x'
-    elif turn == 2:
-        board[0][1] = 'x'
-    elif turn == 3:
-        board[0][2] = 'x'
-    elif turn == 4:
-        board[1][0] = 'x'
-    elif turn == 5:
-        board[1][1] = 'x'
-    elif turn == 6:
-        board[1][2] = 'x'
-    elif turn == 7:
-        board[2][0] = 'x'
-    elif turn == 8:
-        board[2][1] = 'x'
-    elif turn == 9:
-        board[2][2] = 'x'
+    turn2 = int(input("pick a number to place ur o: "))
+    if turn2 == 1:
+        board[0][0] = 'o'
+    elif turn2 == 2:
+        board[0][1] = 'o'
+    elif turn2 == 3:
+        board[0][2] = 'o'
+    elif turn2 == 4:
+        board[1][0] = 'o'
+    elif turn2 == 5:
+        board[1][1] = 'o'
+    elif turn2 == 6:
+        board[1][2] = 'o'
+    elif turn2 == 7:
+        board[2][0] = 'o'
+    elif turn2 == 8:
+        board[2][1] = 'o'
+    elif turn2 == 9:
+        board[2][2] = 'o'
     else:
         print("invalid number")
 
@@ -122,6 +126,7 @@ while True:
     print(f"{board[1][0]} | {board[1][1]} | {board[1][2]}")
     print(" - - - - ")
     print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
+    
     numturn + 2
     if numturn == 9:
         break
