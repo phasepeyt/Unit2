@@ -127,6 +127,6 @@ while True:
     print(" - - - - ")
     print(f"{board[2][0]} | {board[2][1]} | {board[2][2]}")
     
-    numturn + 2
+    numturn += 2
     if numturn == 9:
         break
